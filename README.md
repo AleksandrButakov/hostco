@@ -1,5 +1,5 @@
-# Проект по автоматизации тестирования для WebService www.hostco.ru
-## <a target="_blank" href="https://www.rshb.ru/">Веб сайт https://rshb.ru</a>
+# Проект по автоматизации тестирования для сайта группы компаний ХОСТ
+## <a target="_blank" href="https://www.hostco.ru/">Веб сайт https://hostco.ru</a>
 
 ## :shinto_shrine: Содержание:
 
