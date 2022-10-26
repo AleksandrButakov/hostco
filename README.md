@@ -1,4 +1,4 @@
-# Проект по автоматизации тестирования для Россельхозбанка
+# Проект по автоматизации тестирования для WebService www.hostco.ru
 ## <a target="_blank" href="https://www.rshb.ru/">Веб сайт https://rshb.ru</a>
 
 ## :shinto_shrine: Содержание:
