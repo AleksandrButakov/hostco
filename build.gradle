@@ -3,7 +3,7 @@ plugins {
     id "io.qameta.allure" version "2.9.6"
 }
 
-group 'ru.anbn.rshb'
+group 'ru.anbn.hostco'
 version '1.0'
 
 repositories {

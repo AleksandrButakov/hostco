@@ -41,3 +41,4 @@ target/
 /gradlew
 /gradlew.bat
 !src/test/resources/notifications/allure-notifications-3.1.2.jar
+/settings.gradle
