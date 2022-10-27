@@ -8,7 +8,12 @@ import static com.codeborne.selenide.Configuration.baseUrl;
 import static com.codeborne.selenide.Selenide.*;
 import static io.qameta.allure.Allure.step;
 
-public class RshbTests extends TestBase {
+public class HostTests extends TestBase {
+
+    /*
+    Баг: Главная страница -> Центр обучения -> Отправить заявку
+    Переход в начало этой же страницы
+     */
 
     HomePage homePage = new HomePage();
     Individuals individuals = new Individuals();
@@ -24,13 +29,17 @@ public class RshbTests extends TestBase {
             preliminaryCalculation = "55 400 ₽";
 
     @Test
-    @DisplayName("Credit calculation test")
+    @DisplayName("Checking the career link")
     void creditCalculationTest() {
 
-        // data entry
-        step("- Зайти на сайт rshb.ru", () -> {
-            open(baseUrl);
+        step("- Кликнуть по ссылке Карьера", () -> {
+            homePage.clickCareer();
         });
+
+        step("", () -> {
+
+        });
+
 
         step("- Кликнуть «Частным лицам»", () -> {
             homePage.clickIndividuals();
@@ -67,6 +76,7 @@ public class RshbTests extends TestBase {
     }
 
     @Test
+    @Disabled
     @DisplayName("Checking the link to farmers")
     void checkingLinkFarmers() {
         step("- Проверка ссылки «Фермерам»", () -> {
@@ -75,6 +85,7 @@ public class RshbTests extends TestBase {
     }
 
     @Test
+    @Disabled
     @DisplayName("Checking the link to small business")
     void checkingLinkSmallBusiness() {
         step("- Проверка ссылки «Малому бизнесу и ИП»", () -> {
@@ -83,6 +94,7 @@ public class RshbTests extends TestBase {
     }
 
     @Test
+    @Disabled
     @DisplayName("Checking a false link number one")
     void checkingFalseLink01() {
         step("- Проверка ложной ссылки №1", () -> {
@@ -91,6 +103,7 @@ public class RshbTests extends TestBase {
     }
 
     @Test
+    @Disabled
     @DisplayName("Checking a false link number two")
     void checkingFalseLink02() {
         step("- Проверка ложной ссылки №1", () -> {
