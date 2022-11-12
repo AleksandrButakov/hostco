@@ -37,6 +37,7 @@ public class CreditForAnyPurpose {
         System.out.println(s1);
         int sm;
         sm = Integer.parseInt(s1);
+
         while (sm != loanAmount) {
             if (sm < loanAmount) {
                 sliderLoanAmount.sendKeys(Keys.ARROW_RIGHT);
